@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="KARAN YADAV - Professional Anchor & Show Performer. Corporate events, business events, annual events, grand openings, farewells, birthdays, pool parties and cultural events.">
+<title>KARAN YADAV | Professional Anchor & Show Performer</title>
+<style>
+:root{--gold:#d4af37;--gold2:#f5d76e;--bg:#070707;--card:#111;--text:#f7f7f7;--muted:#bdbdbd}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Arial,Helvetica,sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
+a{text-decoration:none;color:inherit}
+.container{width:min(1120px,92%);margin:auto}
+nav{position:fixed;top:0;left:0;width:100%;z-index:10;background:rgba(0,0,0,.88);backdrop-filter:blur(8px);border-bottom:1px solid #292929}
+.navbar{height:72px;display:flex;align-items:center;justify-content:space-between}
+.logo{font-size:1.35rem;font-weight:800;letter-spacing:2px;color:var(--gold2)}
+.navlinks{display:flex;gap:24px}
+.navlinks a{font-size:.9rem;color:#ddd}
+.navlinks a:hover{color:var(--gold2)}
+.hero{min-height:100vh;display:flex;align-items:center;padding-top:72px;position:relative;overflow:hidden;background:radial-gradient(circle at 70% 30%,#3b2d08 0,#111 32%,#070707 68%)}
+.hero:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(0,0,0,.9),rgba(0,0,0,.35));pointer-events:none}
+.hero-content{position:relative;z-index:1;max-width:760px;padding:80px 0}
+.kicker{color:var(--gold2);letter-spacing:4px;text-transform:uppercase;font-size:.85rem;font-weight:700}
+h1{font-size:clamp(3rem,8vw,6.5rem);line-height:.95;margin:18px 0;color:#fff}
+.hero h2{font-size:clamp(1.1rem,2.5vw,1.7rem);font-weight:400;color:#ddd}
+.hero p{margin:22px 0;color:#c9c9c9;max-width:650px;font-size:1.05rem}
+.btns{display:flex;gap:14px;flex-wrap:wrap}
+.btn{display:inline-block;padding:13px 22px;border-radius:5px;font-weight:700;border:1px solid var(--gold)}
+.btn-primary{background:var(--gold);color:#080808}
+.btn-primary:hover{background:var(--gold2)}
+.btn-outline{color:var(--gold2)}
+section{padding:90px 0}
+.section-title{text-align:center;margin-bottom:48px}
+.section-title span{color:var(--gold2);text-transform:uppercase;letter-spacing:3px;font-size:.8rem}
+.section-title h2{font-size:2.3rem;margin-top:8px}
+.about{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center}
+.about-card{background:linear-gradient(145deg,#151515,#0c0c0c);border:1px solid #272727;padding:34px;border-radius:14px}
+.about-card h3{font-size:1.7rem;margin-bottom:15px;color:var(--gold2)}
+.about-card p{color:#c9c9c9;margin-bottom:15px}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:15px;margin-top:25px}
+.stat{padding:20px;background:#0e0e0e;border:1px solid #292929;text-align:center;border-radius:10px}
+.stat strong{display:block;color:var(--gold2);font-size:1.5rem}
+.stat small{color:#aaa}
+.events{background:#0b0b0b}
+.event-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.event{padding:25px;border:1px solid #282828;border-radius:12px;background:#111;transition:.2s}
+.event:hover{transform:translateY(-4px);border-color:var(--gold)}
+.event .icon{font-size:1.7rem;margin-bottom:10px}
+.event h3{font-size:1.05rem}
+.event p{color:#999;font-size:.9rem;margin-top:5px}
+.video-wrap{max-width:900px;margin:auto;border:1px solid #292929;border-radius:14px;overflow:hidden;background:#111}
+.video-wrap iframe{width:100%;aspect-ratio:16/9;border:0;display:block}
+.video-note{text-align:center;color:#999;margin-top:12px;font-size:.9rem}
+.booking{display:grid;grid-template-columns:.85fr 1.15fr;gap:40px;align-items:start}
+.contact-box{background:#111;border:1px solid #292929;border-radius:14px;padding:30px}
+.contact-box h3{color:var(--gold2);font-size:1.5rem;margin-bottom:12px}
+.contact-item{padding:12px 0;border-bottom:1px solid #242424;color:#ccc}
+.contact-item:last-child{border:0}
+.contact-item b{color:#fff}
+form{background:#111;border:1px solid #292929;border-radius:14px;padding:30px}
+.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:15px}
+label{display:block;font-size:.85rem;color:#bbb;margin-bottom:6px}
+input,select,textarea{width:100%;background:#080808;border:1px solid #303030;color:#fff;padding:12px;border-radius:6px;outline:none}
+input:focus,select:focus,textarea:focus{border-color:var(--gold)}
+.full{grid-column:1/-1}
+textarea{min-height:120px;resize:vertical}
+form button{margin-top:15px;width:100%;cursor:pointer}
+footer{border-top:1px solid #222;padding:28px 0;text-align:center;color:#888}
+.socials{display:flex;justify-content:center;gap:18px;margin-top:10px;color:var(--gold2)}
+@media(max-width:800px){
+.navlinks{display:none}.hero-content{padding:60px 0}
+.about,.booking{grid-template-columns:1fr}.event-grid{grid-template-columns:1fr 1fr}
+}
+@media(max-width:520px){
+.event-grid,.form-grid,.stats{grid-template-columns:1fr}
+section{padding:70px 0}h1{font-size:3.4rem}
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="container navbar">
+    <a class="logo" href="#home">KARAN YADAV</a>
+    <div class="navlinks">
+      <a href="#about">About</a><a href="#events">Events</a><a href="#performance">Performance</a>
+      <a href="#booking">Booking</a><a href="#contact">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero" id="home">
+  <div class="container hero-content">
+    <div class="kicker">Professional Anchor & Show Performer</div>
+    <h1>KARAN<br>YADAV</h1>
+    <h2>Anchoring • Stage Performance • Event Hosting</h2>
+    <p>Turning every event into an unforgettable experience with confident hosting, energetic stage presence and engaging audience interaction.</p>
+    <div class="btns">
+      <a class="btn btn-primary" href="#booking">BOOK ME</a>
+      <a class="btn btn-outline" href="#performance">WATCH PERFORMANCE</a>
+    </div>
+  </div>
+</header>
+
+<section id="about">
+  <div class="container">
+    <div class="section-title"><span>About Me</span><h2>The Voice Behind the Event</h2></div>
+    <div class="about">
+      <div class="about-card">
+        <h3>Professional. Energetic. Memorable.</h3>
+        <p>KARAN YADAV is a professional anchor and show performer with 5–6 years of experience in stage hosting and event entertainment.</p>
+        <p>From grand openings and corporate events to cultural celebrations and private parties, the focus is always on creating a lively atmosphere, keeping the audience connected and making every moment count.</p>
+        <div class="stats">
+          <div class="stat"><strong>5–6+</strong><small>Years Experience</small></div>
+          <div class="stat"><strong>Live</strong><small>Stage Hosting</small></div>
+          <div class="stat"><strong>All</strong><small>Types of Events</small></div>
+        </div>
+      </div>
+      <div class="about-card">
+        <h3>Why Choose Karan?</h3>
+        <p>✓ Confident stage presence</p>
+        <p>✓ Audience engagement & interaction</p>
+        <p>✓ Professional event coordination</p>
+        <p>✓ Energetic and adaptable hosting style</p>
+        <p>✓ Suitable for formal, cultural and celebration events</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="events" id="events">
+  <div class="container">
+    <div class="section-title"><span>What I Host</span><h2>Events & Occasions</h2></div>
+    <div class="event-grid">
+      <div class="event"><div class="icon">🏢</div><h3>Corporate Events</h3><p>Professional hosting for corporate occasions.</p></div>
+      <div class="event"><div class="icon">📢</div><h3>Business Advertisements</h3><p>Energetic presentation and promotional events.</p></div>
+      <div class="event"><div class="icon">🏆</div><h3>Annual Events</h3><p>Annual functions with engaging stage hosting.</p></div>
+      <div class="event"><div class="icon">🎉</div><h3>Grand Opening</h3><p>Make your launch or opening memorable.</p></div>
+      <div class="event"><div class="icon">🎓</div><h3>Farewell Events</h3><p>Emotional, entertaining and well-managed hosting.</p></div>
+      <div class="event"><div class="icon">🎂</div><h3>Birthday Parties</h3><p>Fun hosting and audience interaction.</p></div>
+      <div class="event"><div class="icon">🏊</div><h3>Pool Parties</h3><p>High-energy hosting for celebrations.</p></div>
+      <div class="event"><div class="icon">🎭</div><h3>Cultural Events</h3><p>Stage coordination and engaging presentation.</p></div>
+      <div class="event"><div class="icon">✨</div><h3>And Many More</h3><p>Tell me about your event and let's make it special.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="performance">
+  <div class="container">
+    <div class="section-title"><span>Live Performance</span><h2>Watch Me On Stage</h2></div>
+    <div class="video-wrap">
+      <iframe src="https://www.youtube.com/embed/DNe4XS33qgg" title="Karan Yadav Performance" allowfullscreen></iframe>
+    </div>
+    <p class="video-note">More performances can be added here anytime.</p>
+  </div>
+</section>
+
+<section id="booking">
+  <div class="container">
+    <div class="section-title"><span>Let's Work Together</span><h2>Book Karan Yadav</h2></div>
+    <div class="booking">
+      <div class="contact-box" id="contact">
+        <h3>Make Your Event Special</h3>
+        <p style="color:#aaa;margin-bottom:15px">Fill in your event details. Your booking request will open in WhatsApp.</p>
+        <div class="contact-item"><b>Phone / WhatsApp:</b><br>+91 9709544098</div>
+        <div class="contact-item"><b>Email:</b><br>ky758391@gmail.com</div>
+        <div class="contact-item"><b>Instagram:</b><br><a style="color:var(--gold2)" href="https://www.instagram.com/yk.karanyadav/" target="_blank">yk.karanyadav</a></div>
+        <div class="contact-item"><b>YouTube:</b><br><a style="color:var(--gold2)" href="https://youtube.com/@yk.karanyadavkiaawaj" target="_blank">Karan Yadav Ki Aawaj</a></div>
+      </div>
+
+      <form id="bookingForm">
+        <div class="form-grid">
+          <div><label>Your Name *</label><input id="name" required></div>
+          <div><label>Mobile Number *</label><input id="phone" type="tel" required></div>
+          <div><label>Event Type *</label>
+            <select id="eventType" required>
+              <option value="">Select event</option>
+              <option>Corporate Event</option><option>Business Advertisement</option><option>Annual Event</option>
+              <option>Grand Opening</option><option>Farewell Event</option><option>Birthday Party</option>
+              <option>Pool Party</option><option>Cultural Event</option><option>Other</option>
+            </select>
+          </div>
+          <div><label>Event Date</label><input id="date" type="date"></div>
+          <div class="full"><label>Event Location</label><input id="location" placeholder="City / Venue"></div>
+          <div class="full"><label>Message</label><textarea id="message" placeholder="Tell me about your event..."></textarea></div>
+        </div>
+        <button class="btn btn-primary" type="submit">SEND BOOKING REQUEST ON WHATSAPP</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <strong style="color:var(--gold2)">KARAN YADAV</strong> — Professional Anchor & Show Performer
+    <div class="socials">
+      <a href="https://www.instagram.com/yk.karanyadav/" target="_blank">Instagram</a>
+      <a href="https://youtube.com/@yk.karanyadavkiaawaj" target="_blank">YouTube</a>
+    </div>
+    <p style="margin-top:12px">© 2026 Karan Yadav. All rights reserved.</p>
+  </div>
+</footer>
+
+<script>
+document.getElementById("bookingForm").addEventListener("submit", function(e){
+  e.preventDefault();
+  const name = document.getElementById("name").value.trim();
+  const phone = document.getElementById("phone").value.trim();
+  const eventType = document.getElementById("eventType").value;
+  const date = document.getElementById("date").value || "Not specified";
+  const location = document.getElementById("location").value.trim() || "Not specified";
+  const message = document.getElementById("message").value.trim() || "No additional message";
+  const text =
+`Hello Karan Yadav,
+I want to book you for an event.
+
+Name: ${name}
+Mobile: ${phone}
+Event: ${eventType}
+Date: ${date}
+Location: ${location}
+Message: ${message}`;
+  const whatsappNumber = "919709544098";
+  window.open("https://wa.me/" + whatsappNumber + "?text=" + encodeURIComponent(text), "_blank");
+});
+</script>
+</body>
+</html>
